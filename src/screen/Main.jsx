@@ -20,7 +20,7 @@ const Main = () => {
                                 <Nav.Link href='#internship'>Internships</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className='me-5'>
-                                <Nav.Link href={require('../assets/Resume.pdf')} download='Sathish'>Resume</Nav.Link>
+                                <Nav.Link href={require('../assets/Resume.pdf')} target='_blank'>Resume</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
@@ -41,7 +41,7 @@ const Main = () => {
                             </Container>
                         </Col>
                         <Col sm={true} style={{ background: "linear-gradient(22deg, rgba(32,191,85,1) 0%, rgba(1,186,239,1) 29%, rgba(128,255,128,1) 100%)", borderRadius: "600px 10px" }}>
-                            <Image src={require('../assets/MyImage.png')} className='w-50'></Image>
+                            <Image src={require('../assets/Image.png')} className='w-75 shadow' style={{backdropFilter: "blur(10px)"}}></Image>
                         </Col>
                     </Row>
                 </Container>
@@ -60,7 +60,7 @@ const Main = () => {
                 <Container fluid>
                     <Row>
                         <Col style={{ background: "linear-gradient(22deg, rgba(32,191,85,1) 0%, rgba(1,186,239,1) 29%, rgba(128,255,128,1) 100%)", borderRadius: "10px 600px" }}>
-                            <Image src={require('../assets/MyImage.png')} className='w-50'></Image>
+                            <Image src={require('../assets/MyImage.png')} className='w-50 shadow' style={{backdropFilter: "blur(10px)"}}></Image>
                         </Col>
                         <Col sm={true}>
                             <h3 className='border-bottom border-danger w-25 mx-auto' href="#about" id='about'>About</h3>
@@ -83,7 +83,7 @@ const Main = () => {
                     <br />
 
                     <div className='w-xl-50 w-lg-50 w-sm-100 mx-auto'>
-                        <Card className='mb-4 p-3 border-dark' bg='transparent'>
+                        <Card className='mb-4 p-3 border-dark shadow' bg='transparent' style={{backdropFilter: "blur(10px)"}}>
                             <Card.Img className='w-25 mx-auto' src={require('../assets/Python.png')} />
                             <Card.Body>
                                 <Card.Title>Graph Generator</Card.Title>
@@ -94,7 +94,7 @@ const Main = () => {
                             </Card.Body>
                         </Card>
 
-                        <Card className='p-3 border-dark' bg='transparent'>
+                        <Card className='p-3 border-dark shadow' bg='transparent' style={{backdropFilter: "blur(10px)"}}>
                             <Card.Img className='w-25 mx-auto' src={require('../assets/Java.png')} />
                             <Card.Body>
                                 <Card.Title>Examination Platform</Card.Title>
@@ -119,7 +119,7 @@ const Main = () => {
 
 
                     <div className='w-xl-50 w-lg-50 w-sm-100 mx-auto'>
-                        <Card className='p-3 border-dark' bg='transparent'>
+                        <Card className='p-3 border-dark shadow' bg='transparent' style={{backdropFilter: "blur(10px)"}}>
                             <h5>Innnerwork Solutions Private Limited <span className='bg-danger'>(Virtual Internship)</span></h5>
                             <br />
                             <p style={{ textAlign: "justify" }}>Worked as a Trainee as <span className='text-warning'>PHP Developer</span> in Virtual Mode. They gathered a team to do a
@@ -127,7 +127,7 @@ const Main = () => {
                                 Front-end and PHP as Backend. The duration of the internship was 2 months</p>
                         </Card>
                         <br />
-                        <Card className='p-3 border-dark' bg='transparent'>
+                        <Card className='p-3 border-dark shadow' bg='transparent' style={{backdropFilter: "blur(10px)"}}>
                             <h5>NSEIT Limited <span className='bg-success'>(Present - Full Time)</span></h5>
                             <br />
                             <p style={{ textAlign: "justify" }}>Currently working as an <span className='text-warning'>Associate Systems Analyst</span>.
